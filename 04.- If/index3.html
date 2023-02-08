@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <script>
+
+        //Usaremos 
+        //  "parseInt()"
+        //  "isNaN()" -> isNaN() = is Not A Number -> devuelve T / F
+        //  "typeof()" -> devuelve el tipo de dato de la variable
+        // para comprobar si es o no un numero
+
+        var num = prompt("Introduce el primer numero");
+        var num2 = prompt("Introduce el segundo numero")
+
+        if (!isNaN(num) && !isNaN(num2)) {
+
+            var operaciones = prompt("¿Que operacion quieres hacer?\n + - * /");
+
+            if (operaciones == "+") {
+                //Al hacer esto, JS concatena las dos variables porque cree que son de tipo String
+                //alert("El resultado es " + (num + num2));
+                //Con "typeof" JS nos dice el tipo de dato que es
+                //Para solucionarlo, hay que parsearlo
+                alert(parseInt(num) + parseInt(num2));
+            } else if (operaciones == "-") {
+                alert(parseInt(num) - parseInt(num2));
+            } else if (operaciones == "*") {
+                alert(parseInt(num) * parseInt(num2));
+            } else if (operaciones == "/") {
+                alert(parseInt(num) / parseInt(num2));
+            }
+
+        } else {
+            if (typeof(num1) == "string" || typeof(num2) == "string"){
+                alert("No has introducido valores numericos");
+            } else {
+                alert("Ha ocurrido un error no identificado");
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

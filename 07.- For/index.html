@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucle For</title>
+    <!-- Se piden nombre de trabajadores. Para acabar el bucle while, escribir "salir"
+         Una vez finalizado, se muestran los trabajadores introducidos -->
+    <script>
+        var trabajadores = new Array();
+        var persona = "";
+        var contador = 0;
+
+        while (persona != "salir"){
+            persona  = prompt("Introduce un trabajador")
+            trabajadores[contador] = persona;
+            contador++;
+        }
+
+        //Se borra el ultimo elemento del array, que es "salir"
+        trabajadores.pop();
+
+        for ( var i = 0; i < trabajadores.length; i++){
+            document.write(trabajadores[i] + "<br>");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

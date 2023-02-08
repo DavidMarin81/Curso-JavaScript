@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucle If - Cambiar de Color</title>
+</head>
+<body>
+    <!-- Se crea un boton -->
+    <input type="button" id="boton">
+    <script>
+
+        //Se pregunta al usuario que introduzca un color
+        var boton = document.getElementById("boton");
+        boton.style.width = "250px";
+        var color = prompt("Introduce un color (azul-rojo-verde");
+        if(color =="azul"){
+            boton.style.background = "blue";
+        } else if (color == "rojo") {
+            boton.style.background = "red";
+        } else if (color == "verde"){
+            boton.style.background = "green";
+        } else {
+            boton.style.background = "black";
+        }
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucle IF</title>
+</head>
+<body>
+    
+<script>
+
+    var precioCoche = 6000;
+    var dineroAhorado = prompt("Cuanto dinero tienes ahorrado?");
+    var edad = 11;
+
+    //Primera opción de crear un if
+    alert("Estamos a la primera opción");
+    if (dineroAhorado > precioCoche) {
+        alert("Puedes comprar el coche");
+    } else {
+        alert("No tienes suficiente dinero");
+    }
+
+    //Segunda opción con operadores lógicos ( && - || )
+    alert("Pasamos a la segunda opción");
+    if (dineroAhorado >= precioCoche && edad >= 18) {
+        alert("Puedes comprar el coche");
+    } else {
+        alert("No puedes comprar el coche");
+    }
+
+</script>
+
+</body>
+</html>

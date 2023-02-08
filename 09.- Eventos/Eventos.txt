@@ -1,0 +1,63 @@
+onblur      
+    Deseleccionar el elemento       
+    <button>, <input>, <label>, <select>, <textarea>, <body>
+
+onchange    
+    Deselecciona un elemento que se ha modificado   
+    <input>, <select>, <textarea>
+
+onclick     
+    Pinchar y soltar el raton       
+    Todos los elementos
+
+ondblclick  
+    Pinchar dos veces seguidas con el raton     
+    Todos los elementos
+
+onfocus     
+    Seleccionar un elemento         
+    <button>, <input>, <label>, <select>, <textarea>, <body>
+
+onkeydown   
+    Pulsar una tecla (sin soltar)   
+    Elementos de formulario y <body>
+
+onkeypress  
+    Pulsar una tecla                
+    Elementos de formulario y <body>
+
+onkeyup     
+    Soltar una tecla pulsada        
+    Elementos de formulario y <body>
+
+onload      
+    La pagina se ha cargado completamente   
+    <body>
+
+onmousedown 
+    Pulsar (sin soltar) un botón del ratón  
+    Todos los elementos
+
+onmousemove 
+    Mover el ratón              
+    Todos los elementos
+
+onmouseout  
+    El ratón "sale" del elemento (pasa por encima de otro elemento)
+    Todos los elementos
+
+onmouseover 
+    El ratón "entra" en el elemento (pasa por encima del elemento)
+    Todos los elementos
+
+onmouseup
+    Soltar el botón que estaba pulsado en el ratón  
+    Todos los elementos
+
+onreset
+    Inicializar el formulario (borrar todos sus datos)
+    <form>
+
+onresize
+    Se ha modificado el tamaño de la ventana del navegador
+    <body>

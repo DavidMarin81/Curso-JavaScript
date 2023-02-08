@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Proyectos Iria\\html"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html",
+		"liveServer.settings.CustomBrowser": "chrome"
+	}
+}

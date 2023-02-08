@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+
+    <script>
+
+        function aviso(){
+            alert("Foto de Lego");
+        }
+
+    </script>
+
+</head>
+<body>
+    <!-- Se dispara el evento al pasar por encima de la foto el raton -->
+    <img src="Lego.jpg" width="300" height="300" onmouseover="aviso()">
+    <!-- Se dispara el evento al hacer click encima de la foto -->
+    <img src="Lego.jpg" width="300" height="300" onclick="aviso()">
+    <!-- Se dispara el evento al hacer doble click en la foto -->
+    <img src="Lego.jpg" width="300" height="300" ondblclick="aviso()">
+</body>
+</html>

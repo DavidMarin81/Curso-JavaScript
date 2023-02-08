@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do-While con Cuadros de Texto HTML</title>
+<body>
+    <table width="25%" border="0">
+        <td>
+            <label for="textfield"></label>
+            <input type="text" name="textfield" id="c_mensaje">
+        </td>
+        <td>
+            <label for="textfield2"></label>
+            <input type="text" name="textfield2" id="c_intentos">
+        </td>
+    </table>
+
+    <script>
+        //Se crea un número random para adivinarlo
+        //Multiplica por 100 para tener 3 digitos
+        //Con round redondea para que no tenga decimales
+        var aleatorio = Math.round(Math.random()*100);
+        var num, intentos;
+        num = 0;
+        intentos = 0;
+        var mensaje = document.getElementById("c_mensaje");
+        var intentos_consumidos = document.getElementById("c_intentos");
+
+        do {
+            num = prompt("Introduce un numero del 0 al 100\nNum intentos: " + intentos);
+            intentos++;
+
+            if (num > aleatorio){
+                alert("El numero es mas bajo");
+                mensaje.value="Más bajo";
+                intentos_consumidos.value="Lo has intentado " + intentos +  " veces";
+            } else if (num < aleatorio){
+                mensaje.value="Más alto";
+                alert("El numero es mas alto");
+                intentos_consumidos.value="Lo has intentado " + intentos +  " veces";
+            } else {
+                alert("Has acertado!!!");
+            }
+
+        } while (num != aleatorio && intentos < 10);
+
+        mensaje.value="Has gastado " + intentos + " intentos";
+    </script>
+
+</body>
+</html>

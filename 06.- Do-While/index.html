@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucle Do-While</title>
+
+    
+    <script>
+        //Se crea un número random para adivinarlo
+        //Multiplica por 100 para tener 3 digitos
+        //Con round redondea para que no tenga decimales
+        var aleatorio = Math.round(Math.random()*100);
+        var num, intentos;
+        num = 0;
+        intentos = 0;
+
+        do {
+            var num = prompt("Introduce un numero del 0 al 100\nNum intentos: " + intentos);
+            intentos++;
+
+            if (num > aleatorio){
+                alert("El numero es más bajo");
+            } else if (num < aleatorio){
+                alert("El numero es más alto");
+            } else {
+                alert("Has acertado!!!");
+            }
+
+        } while (num != aleatorio && intentos <= 10);
+
+        alert("El numero era: " + aleatorio);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
